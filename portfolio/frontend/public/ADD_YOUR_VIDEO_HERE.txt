@@ -1,0 +1,14 @@
+Put your autoplay intro video here as:
+
+    /public/intro.mp4
+
+Recommended: 10-20 seconds, muted-friendly (no important audio), landscape,
+under ~8MB so it loads fast. It plays automatically, muted, and looped
+behind the hero section's terminal window.
+
+If this file is missing, the site does NOT break -- the hero simply shows
+its animated pipeline/node-graph background instead, so you can ship
+without a video and add one later.
+
+Delete this .txt file once intro.mp4 is in place (it's not referenced by
+the app and is just a reminder).

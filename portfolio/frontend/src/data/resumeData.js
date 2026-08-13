@@ -1,0 +1,126 @@
+// Local fallback data. The app tries GET /api/resume first (served by the
+// Flask backend) and falls back to this object so the site still works
+// as a static build with no backend running.
+const resumeData = {
+  name: "Tejas Vikram More",
+  titles: ["Data Analyst", "Data Engineer", "Analytics Engineer"],
+  location: "Pune, Maharashtra, India",
+  email: "tejas4vmore@gmail.com",
+  linkedin: "linkedin.com/in/tejas-more-31a1bb228",
+  summary:
+    "Data Analyst and Data Engineer with 1+ year of experience building ETL/ELT pipelines, SQL analytics, and BI reporting for financial services data. Skilled in Python, Advanced SQL, PySpark, and Power BI, with hands-on exposure to cloud data platforms, data modeling, data governance, and data quality frameworks.",
+  stats: [
+    { label: "Transaction records analyzed", value: 1000000, suffix: "+", prefix: "" },
+    { label: "Source feeds integrated", value: 15, suffix: "+", prefix: "" },
+    { label: "Reconciliation errors reduced", value: 28, suffix: "%", prefix: "" },
+    { label: "Faster daily reporting", value: 40, suffix: "%", prefix: "" },
+  ],
+  skillGroups: [
+    {
+      table: "languages",
+      title: "Languages",
+      columns: ["Python", "SQL", "PL/SQL", "DAX", "R (basic)"],
+    },
+    {
+      table: "data_analysis",
+      title: "Data Analysis",
+      columns: ["Pandas", "NumPy", "Scikit-learn", "Statistical Analysis", "A/B Testing", "EDA"],
+    },
+    {
+      table: "sql_databases",
+      title: "SQL & Databases",
+      columns: ["Window Functions", "CTEs", "Query Optimization", "PostgreSQL", "MySQL", "SQL Server"],
+    },
+    {
+      table: "data_engineering",
+      title: "Data Engineering",
+      columns: ["ETL / ELT", "Pipeline Automation", "Data Validation", "Data Lineage", "STTM", "EDW"],
+    },
+    {
+      table: "cloud_stack",
+      title: "Cloud & Modern Data Stack",
+      columns: ["Azure Data Factory", "Databricks", "Snowflake", "AWS Glue", "Airflow", "Kafka", "dbt"],
+    },
+    {
+      table: "bi_visualization",
+      title: "BI & Visualization",
+      columns: ["Power BI", "DAX", "Power Query", "Tableau", "Dashboard Design", "KPI Reporting"],
+    },
+    {
+      table: "data_modeling",
+      title: "Data Modeling",
+      columns: ["Star Schema", "Snowflake Schema", "Dimensional Modeling", "Data Mesh", "Data Virtualization"],
+    },
+    {
+      table: "tools",
+      title: "Tools & Practices",
+      columns: ["Git", "JIRA", "Confluence", "Autosys", "Agile / Scrum", "CI/CD"],
+    },
+  ],
+  experience: [
+    {
+      role: "Associate Data Analyst",
+      company: "Enfuse Solutions",
+      location: "Mumbai, India",
+      start: "Sep 2025",
+      end: "Jul 2026",
+      bullets: [
+        "Owned end-to-end data integration and quality oversight across 15+ internal and external source feeds, ensuring accuracy and compliance with risk and control frameworks.",
+        "Designed and maintained Source-to-Target Mapping (STTM), data lineage, and metadata documentation, reducing data reconciliation errors by 28%.",
+        "Automated ETL data pipelines using SQL, Python, and Autosys scheduling, cutting daily report preparation time by 40%.",
+        "Built interactive Power BI dashboards using DAX and Power Query to track KPIs, operational metrics, and data quality issues.",
+        "Analyzed 1M+ transaction records using advanced SQL and Python statistical techniques to identify trends, correlations, and anomalies.",
+      ],
+    },
+  ],
+  projects: [
+    {
+      name: "Automated Data Lineage & Metadata Governance Engine",
+      impact: "+35% audit readiness",
+      description:
+        "Python-based metadata extraction tracing lineage from raw landing zones through transformation layers, with automated SQL quality checks embedded into ingestion.",
+      tags: ["Python", "SQL", "STTM", "Data Governance"],
+    },
+    {
+      name: "Enterprise Data Mesh & Virtualization Model",
+      impact: "+60% faster ad-hoc queries",
+      description:
+        "Logical data models using Star Schema for domain analytics, with virtual data layers exposing governed, queryable datasets under role-based access.",
+      tags: ["Data Mesh", "Star Schema", "Access Control"],
+    },
+    {
+      name: "Predictive Operational Analytics & Automated Dashboarding",
+      impact: "~15 hrs/week saved",
+      description:
+        "Advanced SQL and Python statistical models analyzing trends across 1M+ transaction records, feeding automated Power BI dashboards with drift detection.",
+      tags: ["Power BI", "Python", "Statistics"],
+    },
+  ],
+  education: [
+    {
+      degree: "Master of Computer Applications (MCA)",
+      school: "Karmaveer Bhaurao Patil Institute of Management Studies and Research, Varye, Satara",
+      university: "Shivaji University",
+    },
+    {
+      degree: "Bachelor of Computer Applications (BCA)",
+      school: "Krishna Institute of Computer Application and Management, Wathar",
+      university: "Shivaji University",
+    },
+  ],
+  certifications: [
+    "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+    "SQL & Data Engineering Essentials — Advanced Database Concepts & Data Modeling",
+  ],
+  targetRoles: [
+    "Data Analyst",
+    "Data Engineer",
+    "Analytics Engineer",
+    "BI Analyst",
+    "Data Quality Analyst",
+    "ETL Developer",
+    "Data Governance Analyst",
+  ],
+};
+
+export default resumeData;

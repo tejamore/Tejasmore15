@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-frost font-body antialiased;
+}
+
+::selection {
+  background: #f5a62333;
+  color: #f5a623;
+}
+
+/* Thin, quiet scrollbar that matches the console aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1220;
+}
+::-webkit-scrollbar-thumb {
+  background: #243252;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2dd4bf55;
+}
+
+/* Respect users who've asked for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.text-glow-amber {
+  text-shadow: 0 0 24px rgba(245, 166, 35, 0.35);
+}
+.text-glow-teal {
+  text-shadow: 0 0 24px rgba(45, 212, 191, 0.35);
+}
+
+.eyebrow {
+  @apply font-mono text-xs tracking-[0.25em] uppercase text-teal;
+}
+
+.panel {
+  @apply bg-steel border border-line rounded-xl;
+}
+
+.focus-ring {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-teal focus-visible:ring-offset-2 focus-visible:ring-offset-ink;
+}
